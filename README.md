@@ -5,24 +5,31 @@ Little and middle size projects don't often require complex-featurefull event bu
 LiteEventBus is a very small library (currently less than 200 lines of code spread in 4 classes) but will give you: handlers declaration through 
 
 > Generic type for messages
+
 There is no fixed type for messages. Declare `LiteBus<MyType> bus = LiteBusFactory.newWeakReference()` to get the bus to publish MyType messages.
 
 > Easy subscription
+
 Use `liteBus.subscribe(myObjectInstance)` to subscribe the object to the bus.
 
 > Handler declaration through annotations
+
 Use `@EventHandler` to declare which method will handle published messages from a subscribed class
 
 > Strong or weak reference
+
 Use the LiteBusFactory methods `newStrongReferenceBus()` or `newWeakReferenceBus()` to instantiate a bus with the type of reference that best suit your use case.
 
 > Custom error handling
+
 You can implements your error handler that can be added to the bus when necessary.
 
 > Easy to debug and customize
+
 Because the source code is very simple and short it is very easy to debug
 
 > Asynchronous message handling
+
 Fire and forget is currently the only policy for message publication (no synchronous message handling yet).
 
 
