@@ -2,7 +2,7 @@
 =========
 An essential and ultra light event bus library for Java based on the publish subscribe pattern.
 Little and middle size projects don't often require complex-featurefull event buses but they do require basic message passing features for event handling.
-LiteEventBus is a very small library (currently less than 200 lines of code spread in 4 classes) but will give you: handlers declaration through 
+LiteEventBus is a very small library (currently less than 200 lines of code spread in 4 classes) but will give you: 
 
 > Generic type for messages
 
